@@ -5,3 +5,6 @@ node_modules
 .env.*
 !.env.example
 payload-types.ts
+.env*
+.agents
+skills-lock.json

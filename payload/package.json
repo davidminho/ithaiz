@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "payload": "payload",
-    "import:menu": "node scripts/import-menu.mjs"
+    "import:menu": "node scripts/import-menu.mjs",
+    "seed:menu": "tsx scripts/seed-menu.ts"
   },
   "dependencies": {
     "@payloadcms/db-vercel-postgres": "latest",
@@ -24,6 +25,7 @@
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "tsx": "^4.23.1",
     "typescript": "5.9.3"
   }
 }
