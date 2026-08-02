@@ -2,6 +2,7 @@ import { handleServerFunctions, RootLayout } from '@payloadcms/next/layouts'
 import config from '@payload-config'
 import type { ReactNode } from 'react'
 import type { ServerFunctionClient } from 'payload'
+import '@payloadcms/next/css'
 // @ts-expect-error Payload generates this import map as JavaScript.
 import { importMap } from './admin/importMap.js'
 
