@@ -49,4 +49,4 @@ for (const [categoryIndex, category] of source.categories.entries()) {
 }
 
 console.log(`Seeded ${source.categories.length} categories and ${itemCount} new menu items as draft.`)
-await payload.db.destroy()
+await payload.db.destroy?.()
