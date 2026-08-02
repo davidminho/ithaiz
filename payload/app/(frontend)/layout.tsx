@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Content management system for iThaiz Thai Restaurant',
 }
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function FrontendLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>{children}</body>
