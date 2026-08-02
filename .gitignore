@@ -3,6 +3,10 @@
 .env.*
 !.env.example
 node_modules/
+payload/node_modules/
+payload/.next/
+payload/.env.local
+payload/payload-types.ts
 backend/data/
 backend/uploads/
 qa_docx_render/

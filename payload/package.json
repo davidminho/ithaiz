@@ -1,0 +1,28 @@
+{
+  "name": "ithaiz-payload-cms",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "payload": "payload",
+    "import:menu": "node scripts/import-menu.mjs"
+  },
+  "dependencies": {
+    "@payloadcms/db-vercel-postgres": "latest",
+    "@payloadcms/next": "latest",
+    "@payloadcms/richtext-lexical": "latest",
+    "@payloadcms/storage-vercel-blob": "latest",
+    "next": "15.4.11",
+    "payload": "latest",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "5.9.3"
+  }
+}
