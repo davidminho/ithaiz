@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7efe0">
+    <link rel="icon" href="assets/icons/ithaiz-logo.png" type="image/png">
+    <meta name="description" content="Explore the iThaiz menu of authentic Thai dishes, chef specials, curries, noodles, soups, and desserts in Richmond, Virginia.">
+    <link rel="canonical" href="{{CANONICAL_URL}}/menu.html">
+    <meta property="og:title" content="Menu | iThaiz Thai Restaurant">
+    <meta property="og:description" content="Explore authentic Thai flavors, freshly prepared at iThaiz in Richmond, Virginia.">
+    <meta property="og:image" content="{{OG_IMAGE_URL}}">
+    <title>Menu | iThaiz Thai Restaurant</title>
+  <link rel="stylesheet" href="css/tokens.css?v=cover-system-2">
+  <link rel="stylesheet" href="css/base.css?v=cover-system-2">
+  <link rel="stylesheet" href="css/components.css?v=logo-system-1">
+  <link rel="stylesheet" href="css/layout.css?v=cover-system-2">
+  <link rel="stylesheet" href="css/pages.css?v=menu-surface-1">
+  <script src="js/main.js?v=cover-system-2" defer></script>
+  </head>
+  <body class="page-menu">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="iThaiz home">
+        <span class="brand__badge"><img class="brand__logo" src="assets/icons/ithaiz-logo.png" alt="" width="857" height="575"><span class="brand__name">iThaiz</span></span>
+        <span class="brand__descriptor">Authentic Thai Cuisine</span>
+      </a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html" aria-current="page">Menu</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="button button--primary header-order" href="order.html">Order Online</a>
+      <div class="mobile-header-actions">
+        <a class="button button--primary mobile-order" href="order.html">Order</a>
+        <button class="menu-trigger" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-trigger>
+          <img src="assets/icons/hamburger.svg" alt="">
+          <span class="visually-hidden">Open navigation</span>
+        </button>
+      </div>
+      <div class="mobile-menu-backdrop" data-menu-backdrop hidden></div>
+      <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" data-mobile-menu hidden>
+        <div class="mobile-menu__top"><span class="eyebrow">Navigate</span><button class="mobile-menu__close" type="button" data-menu-close aria-label="Close navigation">×</button></div>
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html" aria-current="page">Menu</a><a href="reservation.html">Reservation</a><a href="contact.html">Contact</a><a class="button button--primary" href="order.html">Order Online</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="menu-intro content-container">
+        <span class="eyebrow">Pure Flavors · Freshly Prepared</span>
+        <h1 class="display-title">Our Menu</h1>
+        <p>Each dish is made to order with vibrant herbs, fragrant spices, and the balance of sweet, sour, salty, and spicy that makes Thai food unforgettable.</p>
+      </section>
+
+      <section class="notices-bar content-container" aria-label="Menu information">
+        <div class="menu-notice"><img src="assets/icons/alert.svg" alt=""><div><strong>Allergy Notice</strong><span>Please inform your server of any allergies or dietary restrictions.</span></div></div>
+        <div class="spice-scale"><strong>Spice Guide</strong><span><img src="assets/icons/flame-mild.svg" alt="Mild spice"><em>Mild</em></span><span><img src="assets/icons/flame-hot.svg" alt="Spicy"><em>Spicy</em></span><span><img src="assets/icons/flame-hot-2.svg" alt="Very spicy"><em>Very Spicy</em></span></div>
+      </section>
+
+      <section class="menu-catalog content-container" aria-label="Menu categories">
+        <div class="menu-tabs" role="tablist" aria-label="Choose a menu category">
+          <button class="menu-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="chef-specials" data-menu-tab="chef-specials">Chef's Specials</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="stir-fried" data-menu-tab="stir-fried">Stir-Fried</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="curries" data-menu-tab="curries">Curries</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="noodles" data-menu-tab="noodles">Noodles</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="soups" data-menu-tab="soups">Soups</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" aria-controls="desserts" data-menu-tab="desserts">Desserts</button>
+        </div>
+
+        <section class="menu-section menu-section--specials" id="chef-specials" role="tabpanel" tabindex="-1" aria-labelledby="chef-specials-tab">
+          <div class="section-heading section-heading--center">
+            <span class="eyebrow">Chef's Selection</span>
+            <h2 class="section-title">Chef's Specials</h2>
+            <p class="section-heading__copy section-heading__copy--narrow">Signature dishes that showcase the depth and character of Thai cuisine.</p>
+          </div>
+          <div class="menu-grid">
+            <article class="card menu-item"><div class="menu-item__top"><div><span class="menu-item__code">CS1</span><h3>Bangkok Chicken</h3></div><span class="menu-item__price">$16.95</span></div><p>Crispy batter chicken cooked with homemade Thai sweet chili sauce, garlic, green beans, and carrots.</p><div class="menu-item__tags"><span><img src="assets/icons/star.svg" alt="Chef recommendation">Chef's Pick</span></div></article>
+            <article class="card menu-item"><div class="menu-item__top"><div><span class="menu-item__code">CS2</span><h3>Crab &amp; Shrimp Fried Rice</h3></div><span class="menu-item__price">$22.95</span></div><p>Stir-fried jasmine rice with sweet crab meat, shrimp, egg, onions, topped with fresh scallions.</p><div class="menu-item__tags"><span><img src="assets/icons/star.svg" alt="Chef recommendation">Chef's Pick</span></div></article>
+            <article class="card menu-item"><div class="menu-item__top"><div><span class="menu-item__code">CS3</span><h3>Spicy Tilapia Chili Basil</h3></div><span class="menu-item__price">$22.95</span></div><p>Filet batter-fried tilapia stir-fried with hot fresh chili, green beans, bell peppers, bamboo, mushrooms, and sweet crispy basil.</p><div class="menu-item__tags"><span><img src="assets/icons/flame-hot.svg" alt="Spicy">Spicy</span><span><img src="assets/icons/star.svg" alt="Chef recommendation">Chef's Pick</span></div></article>
+            <article class="card menu-item"><div class="menu-item__top"><div><span class="menu-item__code">CS4</span><h3>Spicy Tilapia Mango</h3></div><span class="menu-item__price">$22.95</span></div><p>Filet batter-fried tilapia topped with rich mango sauce, Thai chili, fresh garlic, sweet onions, bell peppers, and crispy basil.</p><div class="menu-item__tags"><span><img src="assets/icons/flame-hot.svg" alt="Spicy">Spicy</span></div></article>
+            <article class="card menu-item"><div class="menu-item__top"><div><span class="menu-item__code">CS5</span><h3>Amazing Thai Peanut</h3></div><span class="menu-item__price">$18.95</span></div><p>Choice of protein with carrots, green beans, broccoli, and baby corn sautéed in rich homemade warm peanut sauce.</p><div class="menu-item__tags"><span><img src="assets/icons/vegan.svg" alt="Vegetarian option">Vegetarian option</span></div></article>
+            <article class="card menu-item"><div class="menu-item__top"><div><span class="menu-item__code">CS6</span><h3>Classic Duck Red Curry</h3></div><span class="menu-item__price">$25.95</span></div><p>Crispy batter-fried boneless duck in sweet red curry paste, rich coconut milk, pineapple chunks, fresh basil leaves, bell peppers, tomatoes, topped with crispy basil.</p><div class="menu-item__tags"><span><img src="assets/icons/flame-hot.svg" alt="Spicy">Spicy</span></div></article>
+            <article class="card menu-item"><div class="menu-item__top"><div><span class="menu-item__code">CS7</span><h3>Crispy Duck Basil</h3></div><span class="menu-item__price">$25.95</span></div><p>Crispy batter-fried boneless duck cooked in our intensely hot chili-basil sauce, bell peppers, and sweet basil leaves.</p><div class="menu-item__tags"><span><img src="assets/icons/flame-hot-2.svg" alt="Very spicy">Very Spicy</span></div></article>
+            <article class="card menu-item"><div class="menu-item__top"><div><span class="menu-item__code">CS8</span><h3>Grilled Salmon Curry</h3></div><span class="menu-item__price">$22.95</span></div><p>Grilled salmon steak topped with fragrant red curry sauce, broccoli, tomatoes, pineapple, and baby corn, crowned with crisp basil.</p></article>
+            <article class="card menu-item"><div class="menu-item__top"><div><span class="menu-item__code">CS9</span><h3>Volcano Seafood</h3></div><span class="menu-item__price">$22.95</span></div><p>Tiger shrimp, tender squid, and plump mussels stir-fried in aromatic red curry paste, sweet basil, bamboo shoots, and green bell peppers.</p><div class="menu-item__tags"><span><img src="assets/icons/flame-hot.svg" alt="Spicy">Spicy</span></div></article>
+          </div>
+        </section>
+
+        <section class="stir-fried-section" id="stir-fried" role="tabpanel" tabindex="-1" aria-labelledby="stir-fried-tab">
+          <div class="stir-fried-section__intro"><span class="eyebrow">Wok Hei Masterclass</span><h2 class="section-title">Stir-Fried Classics</h2><p>High heat, quick hands, and layers of flavor in every wok-tossed bite.</p></div>
+          <div class="stir-fried-section__items">
+            <article class="stir-fried-item"><span class="menu-item__code">E1</span><div><h3>Pad Ka Pow</h3><p>Choice of protein sautéed with garlic, white onion, bell peppers &amp; fresh basil in light brown sauce.</p></div><span class="menu-item__price">From $15.95</span></article>
+            <article class="stir-fried-item"><span class="menu-item__code">E2</span><div><h3>Ka Pow Moo Sub</h3><p>Choice of protein with spicy garlic, bell peppers &amp; fresh basil in light brown sauce on jasmine rice.</p></div><span class="menu-item__price">$17.95</span></article>
+            <article class="stir-fried-item"><span class="menu-item__code">E3</span><div><h3>Pad Prik Pao</h3><p>Choice of protein with Thai chili, bell peppers, white onion, mushroom &amp; fresh basil in homemade chili paste basil sauce.</p></div><span class="menu-item__price">From $15.95</span></article>
+            <article class="stir-fried-item"><span class="menu-item__code">E4</span><div><h3>Ginger Perfect</h3><p>Choice of protein sautéed with shredded ginger, carrot, mushrooms, bell pepper, white onion &amp; in ginger sauce.</p></div><span class="menu-item__price">From $15.95</span></article>
+            <article class="stir-fried-item"><span class="menu-item__code">E5</span><div><h3>Garlic Favor</h3><p>Choice of protein stir fried in light garlic sauce with broccoli, bell peppers, carrot &amp; mushroom.</p></div><span class="menu-item__price">From $15.95</span></article>
+          </div>
+          <aside class="pricing-guide card"><div><span class="eyebrow">Choose Your Protein</span><h2>Pricing Guide</h2></div><dl><div><dt>Chicken · Pork · Tofu · Mixed Vegetables</dt><dd>$15.95</dd></div><div><dt>Beef · Shrimp · Sliced Squid</dt><dd>$16.95</dd></div><div><dt>Seafood Combination</dt><dd>$18.95</dd></div><div><dt>Crispy Duck or Salmon</dt><dd>$25.95</dd></div></dl><div class="dietary-legend"><span>V Vegetarian</span><span>VG Vegan</span><span>GF Gluten Free</span><span><img src="assets/icons/star.svg" alt=""> Chef's Recommendation</span></div></aside>
+        </section>
+
+        <div class="accordion-list" aria-label="More menu categories">
+          <details class="accordion" id="curries"><summary><span><span class="menu-item__code">03</span>Curries</span><span aria-hidden="true">+</span></summary><div class="accordion__content"><p>TODO(client): Confirm the approved curry item names, descriptions, prices, and dietary tags for this category.</p></div></details>
+          <details class="accordion" id="noodles"><summary><span><span class="menu-item__code">04</span>Noodles</span><span aria-hidden="true">+</span></summary><div class="accordion__content"><p>TODO(client): Confirm the approved noodle item names, descriptions, prices, and dietary tags for this category.</p></div></details>
+          <details class="accordion" id="soups"><summary><span><span class="menu-item__code">05</span>Soups</span><span aria-hidden="true">+</span></summary><div class="accordion__content"><p>TODO(client): Confirm the approved soup item names, descriptions, prices, and dietary tags for this category.</p></div></details>
+          <details class="accordion" id="desserts"><summary><span><span class="menu-item__code">06</span>Desserts</span><span aria-hidden="true">+</span></summary><div class="accordion__content"><p>TODO(client): Confirm the approved dessert item names, descriptions, prices, and dietary tags for this category.</p></div></details>
+        </div>
+      </section>
+
+      <section class="menu-cta content-container"><div><span class="eyebrow">Join Us at the Table</span><h2 class="section-title">Taste the Difference</h2><p>Come experience the flavors of Thailand, made with care and served with warmth.</p></div><a class="button button--primary" href="reservation.html">Reserve a Table</a></section>
+    </main>
+
+    <!-- TODO(client): supply production phone, email, opening hours, map, social, and canonical URLs. -->
+    <footer class="site-footer"><div class="site-footer__brand"><a class="brand" href="index.html" aria-label="iThaiz home"><span class="brand__badge"><img class="brand__logo" src="assets/icons/ithaiz-logo.png" alt=""><span class="brand__name">iThaiz</span></span><span class="brand__descriptor">Authentic Thai Cuisine</span></a><p>Authentic Thai flavors, made with heart.</p></div><div class="site-footer__links"><div><strong>Explore</strong><a href="about.html">About Us</a><a href="menu.html" aria-current="page">Our Menu</a><a href="reservation.html">Reservations</a></div><div><strong>Visit</strong><span>1108 Courthouse Rd. #A<br>Richmond, VA 23236</span><a href="tel:{{PHONE_NUMBER}}">{{PHONE_NUMBER}}</a><a href="mailto:{{EMAIL_ADDRESS}}">{{EMAIL_ADDRESS}}</a></div><div><strong>Hours</strong><span>{{OPENING_HOURS}}</span><a href="{{SOCIAL_LINKS}}" data-placeholder-link>Instagram</a><a href="{{SOCIAL_LINKS}}" data-placeholder-link>Facebook</a></div></div><div class="site-footer__bottom"><span>© <span data-current-year>2026</span> iThaiz. All rights reserved.</span><span>Designed with intention. Served with warmth.</span></div></footer>
+  </body>
+</html>

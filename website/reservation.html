@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7efe0">
+    <link rel="icon" href="assets/icons/ithaiz-logo.png" type="image/png">
+    <meta name="description" content="Reserve a table at iThaiz, an authentic Thai restaurant at 1108 Courthouse Rd. #A in Richmond, Virginia.">
+    <link rel="canonical" href="{{CANONICAL_URL}}/reservation.html">
+    <meta property="og:title" content="Reservation | iThaiz Thai Restaurant">
+    <meta property="og:description" content="Reserve your table at iThaiz in Richmond, Virginia.">
+    <meta property="og:image" content="{{OG_IMAGE_URL}}">
+    <title>Reservation | iThaiz Thai Restaurant</title>
+    <link rel="stylesheet" href="css/tokens.css?v=cover-system-1"><link rel="stylesheet" href="css/base.css?v=cover-system-1"><link rel="stylesheet" href="css/components.css?v=logo-system-1"><link rel="stylesheet" href="css/layout.css?v=cover-system-1"><link rel="stylesheet" href="css/pages.css?v=cover-system-1">
+    <script src="js/main.js?v=cover-system-1" defer></script><script src="js/forms.js?v=cover-system-1" defer></script>
+  </head>
+  <body class="page-reservation">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="iThaiz home"><span class="brand__badge"><img class="brand__logo" src="assets/icons/ithaiz-logo.png" alt="" width="857" height="575"><span class="brand__name">iThaiz</span></span><span class="brand__descriptor">Authentic Thai Cuisine</span></a>
+      <nav class="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="reservation.html" aria-current="page">Reservation</a><a href="contact.html">Contact</a></nav>
+      <a class="button button--primary header-order" href="order.html">Order Online</a>
+      <div class="mobile-header-actions"><a class="button button--primary mobile-order" href="order.html">Order</a><button class="menu-trigger" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-trigger><img src="assets/icons/hamburger.svg" alt=""><span class="visually-hidden">Open navigation</span></button></div>
+      <div class="mobile-menu-backdrop" data-menu-backdrop hidden></div><nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" data-mobile-menu hidden><div class="mobile-menu__top"><span class="eyebrow">Navigate</span><button class="mobile-menu__close" type="button" data-menu-close aria-label="Close navigation">×</button></div><a href="index.html">Home</a><a href="about.html">About</a><a href="menu.html">Menu</a><a href="reservation.html" aria-current="page">Reservation</a><a href="contact.html">Contact</a><a class="button button--primary" href="order.html">Order Online</a></nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero subpage-hero subpage-hero--reservation"><div class="subpage-hero__content"><span class="eyebrow">Your Table Awaits</span><h1 class="display-title">Reserve Your Table</h1><p>Whether it's a special occasion or simply a craving for authentic Thai flavors, we'd love to have you join us.</p></div></section>
+      <section class="reservation-intro content-container"><span class="eyebrow">A Place at Our Table</span><h2 class="section-title">Good Food. Good Company.</h2><p>We believe the best meals are shared. Reserve your table and let us take care of the rest.</p><div class="ornament-line"><img src="assets/icons/line-gold.svg" alt=""></div><p class="reservation-intro__phone">Prefer to call? <a href="tel:{{PHONE_NUMBER}}">{{PHONE_NUMBER}}</a></p></section>
+
+      <section class="reservation-layout content-container">
+        <div class="reservation-form-card card"><div class="section-heading"><span class="eyebrow">Plan Your Visit</span><h2 class="section-title">Make a Reservation</h2><p class="section-heading__copy">Tell us when you'd like to join us and we'll prepare your table.</p></div>
+          <form class="form-grid" data-simulated-form="reservation" action="#" method="post">
+            <div class="field"><label for="reservation-date">Date <span aria-hidden="true">*</span></label><input id="reservation-date" name="date" type="date" required aria-describedby="reservation-date-error"><span class="form-error" id="reservation-date-error" data-error-for="date" role="alert"></span></div>
+            <div class="field"><label for="reservation-time">Time <span aria-hidden="true">*</span></label><input id="reservation-time" name="time" type="time" required aria-describedby="reservation-time-error"><span class="form-error" id="reservation-time-error" data-error-for="time" role="alert"></span></div>
+            <div class="field"><label for="reservation-party">Party Size <span aria-hidden="true">*</span></label><select id="reservation-party" name="party" required aria-describedby="reservation-party-error"><option value="">Select party size</option><option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option><option>7 guests</option><option>8 guests</option><option>9 guests</option><option>10+ guests</option></select><span class="form-error" id="reservation-party-error" data-error-for="party" role="alert"></span></div>
+            <div class="field"><label for="reservation-name">Full Name <span aria-hidden="true">*</span></label><input id="reservation-name" name="name" type="text" autocomplete="name" required aria-describedby="reservation-name-error"><span class="form-error" id="reservation-name-error" data-error-for="name" role="alert"></span></div>
+            <div class="field"><label for="reservation-email">Email <span aria-hidden="true">*</span></label><input id="reservation-email" name="email" type="email" autocomplete="email" required aria-describedby="reservation-email-error"><span class="form-error" id="reservation-email-error" data-error-for="email" role="alert"></span></div>
+            <div class="field"><label for="reservation-phone">Phone</label><input id="reservation-phone" name="phone" type="tel" autocomplete="tel" placeholder="{{PHONE_NUMBER}}"><span class="form-error" data-error-for="phone" role="alert"></span></div>
+            <div class="field field--full"><label for="reservation-allergies">Allergies or Dietary Needs</label><input id="reservation-allergies" name="allergies" type="text" placeholder="Let us know how we can take care of you"><span class="form-error" data-error-for="allergies" role="alert"></span></div>
+            <div class="field field--full"><label for="reservation-notes">Special Requests</label><textarea id="reservation-notes" name="notes" rows="4" placeholder="Celebration, seating preference, or anything else we should know"></textarea><span class="form-error" data-error-for="notes" role="alert"></span></div>
+            <div class="field--full form-actions"><button class="button button--primary" type="submit">Request Reservation</button><p class="form-status" data-form-status role="status" hidden></p></div>
+          </form>
+        </div>
+        <aside class="reservation-sidebar"><div class="reservation-confirm card"><img src="assets/icons/check.svg" alt=""><span class="eyebrow">Confirmation Preview</span><h2>We’ll Save You a Seat</h2><p>After a valid simulated submission, your request confirmation will appear here.</p><div class="reservation-confirm__details"><span><strong>Date</strong><em>Your selected date</em></span><span><strong>Time</strong><em>Your selected time</em></span><span><strong>Party</strong><em>Your selected party size</em></span></div></div><div class="arrival-notes"><span class="eyebrow">Arrival &amp; Parking Notes</span><h2>Plan Your Visit</h2><p>We recommend arriving a few minutes early so you can settle in and enjoy the evening.</p><ul><li>Complimentary parking is available in the shopping center lot.</li><li>Please let us know if your party is running late.</li><li>For larger groups, contact us directly so we can plan the best experience.</li></ul></div></aside>
+      </section>
+      <section class="reservation-cta"><div class="content-container"><span class="eyebrow">Questions?</span><h2 class="section-title">We're Here to Help</h2><p>For changes, larger parties, or special arrangements, please reach out directly.</p><a class="button button--outline" href="contact.html">Contact Us</a></div></section>
+    </main>
+
+    <!-- TODO(client): supply production phone, email, opening hours, reservation, map, social, and canonical URLs. -->
+    <footer class="site-footer"><div class="site-footer__brand"><a class="brand" href="index.html" aria-label="iThaiz home"><span class="brand__badge"><img class="brand__logo" src="assets/icons/ithaiz-logo.png" alt=""><span class="brand__name">iThaiz</span></span><span class="brand__descriptor">Authentic Thai Cuisine</span></a><p>Authentic Thai flavors, made with heart.</p></div><div class="site-footer__links"><div><strong>Explore</strong><a href="about.html">About Us</a><a href="menu.html">Our Menu</a><a href="reservation.html" aria-current="page">Reservations</a></div><div><strong>Visit</strong><span>1108 Courthouse Rd. #A<br>Richmond, VA 23236</span><a href="tel:{{PHONE_NUMBER}}">{{PHONE_NUMBER}}</a><a href="mailto:{{EMAIL_ADDRESS}}">{{EMAIL_ADDRESS}}</a></div><div><strong>Hours</strong><span>{{OPENING_HOURS}}</span><a href="{{SOCIAL_LINKS}}" data-placeholder-link>Instagram</a><a href="{{SOCIAL_LINKS}}" data-placeholder-link>Facebook</a></div></div><div class="site-footer__bottom"><span>© <span data-current-year>2026</span> iThaiz. All rights reserved.</span><span>Designed with intention. Served with warmth.</span></div></footer>
+  </body>
+</html>

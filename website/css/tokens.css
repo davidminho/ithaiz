@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Gloock";
+  src: url("../assets/fonts/gloock-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url("../assets/fonts/google-sans-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../assets/fonts/cormorant-garamond-regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../assets/fonts/cormorant-garamond-light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../assets/fonts/cormorant-garamond-semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: url("../assets/fonts/cormorant-garamond-bold-italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope-semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../assets/fonts/manrope-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  --color-ink: #3c2e21;
+  --color-ink-deep: #2a1d13;
+  --color-surface: #f7efe0;
+  --color-surface-raised: #fffdf7;
+  --color-surface-panel: rgba(255, 253, 247, 0.94);
+  --color-paper: #f4e8d2;
+  --color-paper-soft: #fff8ec;
+  --color-paper-deep: #e7d1ad;
+  --color-warm-ink: #29241f;
+  --color-warm-muted: #6f5a42;
+  --color-chili: #9a3f30;
+  --color-herb: #6e8757;
+  --color-golden-ink: #342615;
+  --color-golden-muted: #624824;
+  --color-golden-accent: #7d531f;
+  --color-gold: #8d5c23;
+  --color-gold-light: #8d5c23;
+  --color-gold-gradient: #c39a53;
+  --color-gold-start: #e3bd6b;
+  --color-gold-end: #966a31;
+  --color-cream: #2c2118;
+  --color-muted: #6f5a42;
+  --color-border: #b99353;
+  --color-border-gold: rgba(195, 154, 83, 0.58);
+  --color-border-gold-strong: rgba(195, 154, 83, 0.78);
+  --color-success: #82c65b;
+  --page-gradient: linear-gradient(180deg, #fffdf7 0%, #f7efe0 52%, #ead7b4 100%);
+  --gold-gradient: linear-gradient(110deg, var(--color-gold-start) 0%, var(--color-gold-gradient) 40%, var(--color-gold-end) 100%);
+  --warm-gradient: linear-gradient(135deg, var(--color-paper-soft) 0%, var(--color-paper) 100%);
+  --hero-overlay-gradient: linear-gradient(180deg, rgba(255, 247, 224, 0.12) 0%, rgba(225, 176, 82, 0.2) 48%, rgba(91, 55, 18, 0.38) 100%);
+  --header-golden-glass: linear-gradient(110deg, rgba(255, 248, 231, 0.94) 0%, rgba(239, 210, 146, 0.92) 42%, rgba(215, 166, 85, 0.93) 100%);
+  --display-font: "Gloock", "Cormorant Garamond", Georgia, serif;
+  --body-font: "Google Sans", "Manrope", Arial, sans-serif;
+  --container: 1280px;
+  --gutter: 80px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-pill: 999px;
+  --shadow-card: 0 14px 36px rgba(77, 51, 24, 0.16), 0 0 0 1px rgba(195, 154, 83, 0.08);
+  --shadow-gold: 0 2px 8px rgba(195, 154, 83, 0.28);
+  --ornament-opacity: 0.14;
+  --transition: 180ms ease;
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --motion-ease-soft: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-duration: 720ms;
+  --motion-duration-fast: 280ms;
+  --motion-duration-slideshow: 1800ms;
+  --motion-distance: 28px;
+  --parallax-scale: 1.06;
+}

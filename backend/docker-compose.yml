@@ -1,0 +1,46 @@
+services:
+  database:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-directus}
+      POSTGRES_USER: ${POSTGRES_USER:-directus}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-directus-local-only}
+    volumes:
+      - database_data:/var/lib/postgresql/data
+      - ./schema/001-menu.sql:/docker-entrypoint-initdb.d/001-menu.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-directus} -d ${POSTGRES_DB:-directus}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  directus:
+    image: directus/directus:11
+    restart: unless-stopped
+    ports:
+      - "8055:8055"
+    depends_on:
+      database:
+        condition: service_healthy
+    environment:
+      SECRET: ${DIRECTUS_SECRET:-replace-me-before-production}
+      KEY: ${DIRECTUS_KEY:-replace-me-before-production}
+      ADMIN_EMAIL: ${DIRECTUS_ADMIN_EMAIL:-admin@example.com}
+      ADMIN_PASSWORD: ${DIRECTUS_ADMIN_PASSWORD:-change-this-admin-password}
+      PUBLIC_URL: ${DIRECTUS_PUBLIC_URL:-http://localhost:8055}
+      DB_CLIENT: pg
+      DB_HOST: database
+      DB_PORT: 5432
+      DB_DATABASE: ${POSTGRES_DB:-directus}
+      DB_USER: ${POSTGRES_USER:-directus}
+      DB_PASSWORD: ${POSTGRES_PASSWORD:-directus-local-only}
+      CORS_ENABLED: "true"
+      CORS_ORIGIN: "true"
+      WEBSOCKETS_ENABLED: "true"
+    volumes:
+      - uploads:/directus/uploads
+
+volumes:
+  database_data:
+  uploads:
